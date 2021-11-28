@@ -1,4 +1,4 @@
-
+// 3) Find the "Kth" max and min element of an array 
 // N = 6
 // arr[] = 7 10 4 3 20 15
 // K = 3

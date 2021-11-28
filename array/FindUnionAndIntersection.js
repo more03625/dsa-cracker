@@ -1,3 +1,4 @@
+// 6)Find the Union and Intersection of the two sorted arrays.
 const findUnionAndIntersection = (firstArray, secondArray) => {
     // Logic :- Merge 2 Arrays & remove duplicates thats it
 

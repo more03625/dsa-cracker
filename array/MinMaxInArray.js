@@ -1,4 +1,4 @@
-
+//2) Find the maximum and minimum element in an array
 const minMaxInArray = (arr) => {
 
     let minMax = new  Array()

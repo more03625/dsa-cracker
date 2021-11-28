@@ -1,3 +1,4 @@
+// 14) Merge Intervals
 const mergeIntervals = intervals => {
     if (intervals.length === 1 || intervals.length === 0) {
         return intervals;

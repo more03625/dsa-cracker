@@ -1,3 +1,4 @@
+// 7)Write a program to cyclically rotate an array by one. & Also by k steps
 const cyclically = (arr, n, k) => { // Brute Force
     let temp, i, count = 0;
 

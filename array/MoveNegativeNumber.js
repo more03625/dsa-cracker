@@ -1,3 +1,4 @@
+// 6) Move all the negative elements to one side of the array 
 // 1) Brute Force Approch
 
 const moveNegativeNumber = (arr) => { // Brute Force (Using 3 arrays)

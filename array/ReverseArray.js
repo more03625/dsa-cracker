@@ -1,3 +1,4 @@
+// 1) Reverse the array
 const reverseArrayIteration = () => {
     let arr = [1,2,3];
     let n = arr.length, start = 0 , end = n-1, temp;

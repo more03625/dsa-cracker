@@ -1,3 +1,4 @@
+// 11) find duplicate in an array of N+1 Integers
 const findDuplicatesInArray = (arr) => {
 
     let arrNew = []; // 57 Test Cases passed. out of 58
