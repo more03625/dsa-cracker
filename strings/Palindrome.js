@@ -1,3 +1,4 @@
+// 2) Check whether a String is Palindrome or not
 const Palindrome = str => {
 
     // remove all Alphanumeric : Alphanumeric :- A to Z & 0-9

@@ -1,19 +1,24 @@
+// 3)Find Duplicate characters in a string
 const countDuplicateInString = str => {
-    
-    let i, newStr = '';
+    // Create New Array & fill count with 0
 
-    for(i = 0; i < str.length; i++){
-        if(!newStr.includes(str[i])){
-            console.log(str[i])
-            // newStr.concat(str[i])
-        }
-        
+    var count = {};
+    for (var i = 0; i < str.length; i++) {
+        count[str[i]] = 0; // Make all the count to 0
     }
-    return newStr;
-   
 
-        
+    for (var i = 0; i < str.length; i++) {
+        // str[i] :- Gives all the letters one by one!
+        count[str[i]]++; // Increase the counter of above letter by 1
+    }
+    let a = []
+    for(let letter in count){ // Loop On Above's Count & If count is greate than 1 log that letter with it's count
+        if(count[letter] > 1){
+            a.push({letter, count : count[letter]})
+        }
+    }
+    return a;
 
-    
+    // O(n) , O(n), O(n) = 3 O(n)
 }
-console.log("countDuplicateInString ===> ", countDuplicateInString("bcabc"));
+console.log("Duplicates are ===> ", countDuplicateInString("rraahull"));
