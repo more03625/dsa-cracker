@@ -13,7 +13,6 @@ const valueEqualToIndex = (arr, arrayLength) => {
         }
     }
     return indexArray[0];
-
 }
 let arr = [4, 3, 2, 1], arrayLength = arr.length - 1
 arr.sort((a, b) => a - b)

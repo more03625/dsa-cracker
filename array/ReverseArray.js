@@ -1,13 +1,13 @@
 // 1) Reverse the array
 const reverseArrayIteration = () => {
-    let arr = [1,2,3];
-    let n = arr.length, start = 0 , end = n-1, temp;
+    let arr = [1, 2, 3];
+    let n = arr.length, start = 0, end = n - 1, temp;
 
-    while(start < end){ 
+    while (start < end) {
         temp = arr[start];
         arr[start] = arr[end];
         arr[end] = temp;
-    
+
         start++
         end--
     }
@@ -20,7 +20,7 @@ const reverseArrayIteration = () => {
 
 const reverseArray = (arr, n, start, end) => {
 
-    if(start > end){
+    if (start > end) {
         return arr
     }
 
@@ -36,8 +36,8 @@ const reverseArray = (arr, n, start, end) => {
     // 2     | 1
 }
 const reverseArrayRecursion = () => {
-    let arr = [1,2,3,4,5,6,7,8];
-    let n = arr.length, start = 0 , end = n-1;
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+    let n = arr.length, start = 0, end = n - 1;
 
     reverseArray(arr, n, start, end)
     return arr

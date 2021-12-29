@@ -1,7 +1,7 @@
 //2) Find the maximum and minimum element in an array
 const minMaxInArray = (arr) => {
 
-    let minMax = new  Array()
+    let minMax = new  Array();
 
     if(arr.length === 1){
         minMax.min = arr[0];
