@@ -5,6 +5,7 @@ const sortArray = (arr) => {
     let low = 0, mid = 0, high = arr.length - 1, temp;
 
     while (mid <= high) {
+        console.log(mid);
         if (arr[mid] === 0) {
             temp = arr[low];
             arr[low] = arr[mid];

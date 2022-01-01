@@ -5,7 +5,10 @@ const findUnionAndIntersection = (firstArray, secondArray) => {
     const mergedArray = [...firstArray, ...secondArray];
     // console.log("mergedArray ===> ", mergedArray)
 
-    let result = [];
+    // Union Only Unique
+    // Intersection Means: Give comman elements from both
+
+    let intersectingArray = [];
     let unionArray = [];
     // Below Union exceeds time
     for (let i = 0; i < mergedArray.length; i++) {
@@ -14,12 +17,11 @@ const findUnionAndIntersection = (firstArray, secondArray) => {
         }
     }
     for (let num of firstArray) {
-
-        if (secondArray.includes(num) && !result.includes(num)) {
-            result.push(num)
+        if (secondArray.includes(num) && !intersectingArray.includes(num)) {
+            intersectingArray.push(num)
         }
     }
 
-    return { union: unionArray, intersection: result }
+    return { union: unionArray, intersection: intersectingArray }
 }
 console.log(findUnionAndIntersection([6, 2], [85, 25, 1, 32, 54, 6]))

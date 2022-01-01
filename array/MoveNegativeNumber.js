@@ -39,7 +39,7 @@ const moveNegativeNumberUsingTwoPointer = (arr) => {
     // [-12, 11, -13, -5, 6, -7, 5, -3, -6, 0]
     //       Start                          End   
 
-    let start = 0, end = arr.length - 1, temp;
+    let start = 0, end = arr.length - 1;
 
     while (start < end) {
         while (arr[start] < 0) {
@@ -48,6 +48,7 @@ const moveNegativeNumberUsingTwoPointer = (arr) => {
         while (arr[end] > 0) {
             end--
         }
+        console.log(start, end, arr);
         swap(start, end, arr)
     }
 
